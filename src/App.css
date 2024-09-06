@@ -1,0 +1,240 @@
+html {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: #A6BFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body{
+  width: 393px;
+  height: 852px;
+  font-family: 'Rubik', sans-serif;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center; /* This might not be necessary */
+  background-color: white;
+}
+
+.thebigbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items vertically */
+}
+
+.container2 {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+
+
+
+/* Add outline only when body width is less than 1920px */
+@media (max-width: 1920px) {
+  body {
+    outline: 2px solid gray; /* Adjust color and width as needed */
+  }
+}
+
+
+
+.profile1 {
+  margin-left: 0px;
+  margin-top: 20px; /* Add margin-top to match margin-top of abigbutton */
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.profile1 svg{
+  fill: currentColor; /* Use current text color for SVG */
+  flex-shrink: 0; /* Don't let the icon shrink */
+  width: 2.8em; /* Size of the SVG */
+  height: 2.8em;
+}
+
+
+.abigbutton {
+  background-color: #3A6DF2;
+  color: #FFFFFF;
+  border: none;
+  width: 144px;
+  height: 38px;
+  outline: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Spacing between text and icon */
+  padding-left: 10px; /* Add padding to the left */
+  margin-left: 180px;
+  margin-top: 20px;
+  margin-bottom: 3px;
+}
+
+.abigbutton span {
+  flex-grow: 1; /* Let the text occupy available space */
+  margin-left: -20px;
+  font-weight: bold;
+}
+
+.abigbutton svg {
+  fill: currentColor; /* Use current text color for SVG */
+  flex-shrink: 0; /* Don't let the icon shrink */
+  width: 2em; /* Size of the SVG */
+  height: 2em;
+}
+
+
+.dayButtons {
+  display: flex;
+  overflow-x: hidden;
+  max-width: 393px;
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+  margin-bottom: 7px;
+}
+
+.dayButtons button {
+  padding: 8px 9.6px;
+  margin: 4px;
+  background-color: white;
+  color: #000000;
+  font-size: 32px;
+  border: none;
+  cursor: pointer;
+}
+
+.dayButtons button:hover {
+  /* CSS styling for button hover state */
+  background-color: none;
+}
+
+.dayButtons button:focus {
+  /* CSS styling for button focus state */
+  outline: none;
+  font-weight: bold;
+}
+
+.dayButtons button:not(:focus) {
+  color: #C1C9D1;
+}
+
+
+.allLessons {
+  display:flex;
+  flex-direction: column;
+}
+
+.allLessons > .todolist {
+  margin-top: 18px;
+}
+
+.todolist{
+  position: relative;
+  width: 393px;
+  height: 60px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+}
+
+.lessons {
+  list-style-type: none;
+  margin: 0;
+  padding-inline-start: 5px;
+  margin-block-start: 1px;
+  font-weight: bold;
+}
+
+.lessonBold{
+  color: #FFFFFF;
+  font-size: 24px;
+}
+.classroomNumber{
+  align-self: flex-end;
+  font-size: 12px;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 0px;
+  left: 5px;
+}
+
+
+
+.right{
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.teacherName{
+  padding-top: 1px;
+  padding-right: 5px;
+}
+
+.classDuration{
+  align-self: flex-end;
+  position: absolute;
+  bottom: 0px;
+
+}
+
+
+.color1 {
+  background-color: #1652DF; /* Example color */
+}
+
+.color2 {
+  background-color: #FFCA00; /* Example color */
+}
+
+.color3 {
+  background-color: #FB3640; /* Example color */
+}
+
+.color4 {
+  background-color: #47BFFF; /* Example color */
+}
+
+.color5 {
+  background-color: #00AF54; /* Example color */
+}
+
+
+.notmyjob {
+  font-size: 5px;
+}
+
+
+
+
+
+
+.inputfield {
+  margin-top: 100px; /* Add some margin for spacing */
+}
+
+#leButton{
+  margin-top: 10px;
+  padding-right: 200px;
+  padding-bottom: 10px;
+}
+
+li button {
+  margin-top: 2.5px;
+  margin-left: 30px;
+  cursor: pointer;
+  background-color: red; /* You can choose your preferred color */
+  color: #fff;
+  border: none;
+  padding: 3px 10px;
+  border-radius: 4px;
+}
